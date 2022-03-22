@@ -15,7 +15,7 @@ def mirror_status(update, context):
         if len(download_dict) == 0:
             currentTime = get_readable_time(time() - botStartTime)
             free = get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)
-            message = 'KUCH KAAM DO BRO! KHALI BAITHA HU 🙁 !\n___________________________'
+            message = '𝐊𝐔𝐂𝐇 𝐊𝐀𝐀𝐌 𝐃𝐎 𝐁𝐑𝐎! 𝐊𝐇𝐀𝐋𝐈 𝐁𝐀𝐈𝐓𝐇𝐀 𝐇𝐔 🙁!\n___________________________'
             message += f"\n<b>CPU 🖥️:</b> {cpu_percent()}% | <b>FREE 🗃️:</b> {free}" \
                        f"\n<b>RAM ⛏️:</b> {virtual_memory().percent}% | <b>Bot Uptime ⌚:</b> {currentTime}"
             reply_message = sendMessage(message, context.bot, update.message)
